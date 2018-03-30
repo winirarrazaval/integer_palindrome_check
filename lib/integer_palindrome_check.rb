@@ -2,10 +2,10 @@
 require "pry"
 
 def is_palindrome(number)
-   return false if number < 0
-   return false if number == nil
-   return true if number < 10
-   
+
+  return false if number == nil || number < 0
+  return true if number < 10
+  return true if number == ""
 
 
 
